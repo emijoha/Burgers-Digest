@@ -8,3 +8,10 @@ CREATE TABLE burgers
 	devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
+
+CREATE TABLE bobs_burgers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	burger_pun varchar(255) NOT NULL
+	PRIMARY KEY (id)
+);
