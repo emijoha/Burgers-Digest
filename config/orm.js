@@ -61,6 +61,8 @@ const orm = {
     });
   },
 
+  // Colums: array of colum names
+  // number of colums specified get turned into needed number of question marks via printQuestionMarks helper function
   insertOne: function(table, columns, values, cb) {
 
     const queryString = "INSERT INTO " + table;
@@ -85,6 +87,7 @@ const orm = {
   },
 
   // objColVals ex: {col1: val1, col2: val2}
+  // This obj gets turned to sql syntax via objToSql helper function
   updateOne: function(table, objColVals, condition, cb) {
 
     const queryString = "UPDATE " + table;
