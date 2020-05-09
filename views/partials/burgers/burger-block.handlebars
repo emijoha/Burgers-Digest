@@ -1,0 +1,12 @@
+<li>
+	{{burger_name}}
+
+	<button class="change-digest" data-id="{{id}}" data-newdigest="{{digest}}">
+		{{#if digest}}Digest!{{else}}Order Again.{{/if}}
+	</button>
+
+    <button class="delete-burger" data-id="{{this.id}}" data-newdigest="{{digest}}">
+        {{#if digest}}Throw Away.{{else}}Flush!{{/if}}
+    </button>
+
+</li>

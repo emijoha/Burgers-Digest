@@ -48,7 +48,7 @@ const orm = {
 
   selectAll: function(tableInput, cb) {
 
-    const queryString = "SELECT * FROM " + tableInput + ";";
+    let queryString = "SELECT * FROM " + tableInput + ";";
 
     connection.query(queryString, function(err, result) {
 
@@ -65,7 +65,7 @@ const orm = {
   // number of colums specified get turned into needed number of question marks via printQuestionMarks helper function
   insertOne: function(table, columns, values, cb) {
 
-    const queryString = "INSERT INTO " + table;
+    let queryString = "INSERT INTO " + table;
           queryString += " (";
           queryString += columns.toString();
           queryString += ") ";
@@ -90,7 +90,7 @@ const orm = {
   // This obj gets turned to sql syntax via objToSql helper function
   updateOne: function(table, objColVals, condition, cb) {
 
-    const queryString = "UPDATE " + table;
+    let queryString = "UPDATE " + table;
           queryString += " SET ";
           queryString += objToSql(objColVals);
           queryString += " WHERE ";
@@ -110,8 +110,8 @@ const orm = {
   },
 
   deleteOne: function(table, condition, cb) {
-    const queryString = "DELETE FROM " + table;
-          queryString += "WHERE ";
+    let queryString = "DELETE FROM " + table;
+          queryString += " WHERE ";
           queryString += condition;
     
     console.log(queryString);
@@ -121,7 +121,7 @@ const orm = {
         throw err;
       }
 
-      cb(res);
+      cb(result);
     });
   },
 
