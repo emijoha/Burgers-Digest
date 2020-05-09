@@ -125,6 +125,29 @@ const orm = {
     });
   },
 
+  // For bobs_burgers table, there are 340 burgers on it, with ids from 1 to 340
+  // has come hard-coded elements, since it will only be used with the bobs burger table.
+  // would have to change the '340' number id math random equation when adding future bob's burgers names
+  selectRandom: function(tableInput, columnName, cb) {
+    
+    let id = Math.floor(Math.random() * 340) + 1;
+
+    let queryString = "SELECT " + columnName;
+        queryString += " FROM " + tableInput;
+        queryString += " WHERE id = " + id;
+
+    console.log(queryString);
+
+    connection.query(queryString, function(err, result) {
+      
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    })
+  }
+
 };
 
 // Export ORM
