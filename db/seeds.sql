@@ -1,4 +1,4 @@
-INSERT INTO bobs_burgers (burger_name)
+INSERT INTO bobs_burgers (burger_pun)
 VALUES  
     ("“New Bacon-ings” – Comes with Bacon"), 
     ("The Child Molester – Comes with Candy!"),
@@ -24,7 +24,7 @@ VALUES
     ("Shoot out at the Okra Coral Burger Burger – Comes with Okra"),
     ("Give Me Your Best Shallot Burger – Comes with Shallot"),
     ("The Sound & The Curry Burger – Comes with Curry"),
-    ("I’ve Created a Munster Burger – Comes with Munster cheese"),
+    ("I’ve Created a Muenster Burger – Comes with Muenster cheese"),
     ("Something’s NOT Fishy Burger – With a 100% Beef"),
     ("One Fish, Two Fish, Red Fish Hamburger"),
     ("Take Me Out To The Burger – Comes with Peanuts and Crackerjacks"),

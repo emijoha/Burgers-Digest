@@ -12,6 +12,6 @@ CREATE TABLE burgers
 CREATE TABLE bobs_burgers
 (
 	id int NOT NULL AUTO_INCREMENT,
-	burger_pun varchar(255) NOT NULL
+	burger_pun varchar(255) NOT NULL,
 	PRIMARY KEY (id)
 );
