@@ -43,7 +43,7 @@ $(function() {
     );
   });
 
-  $(".random-form").on("submit", function(event) {
+  $("#random-submit").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
