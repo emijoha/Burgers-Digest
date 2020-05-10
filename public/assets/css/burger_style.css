@@ -2,13 +2,28 @@
   background-color: rgb(119,122,131);
   color: white;
   padding: 1.5rem;
-  margin: 1.5rem;
   border: solid;
-  border-radius: 0.5rem;
-  border-color: rgb(176,72,79);
-  border-width: 1rem;
+  border-radius: 0.3rem;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.085rem;
+  height: 100%;
 }
 
-body {
+.chalk-border {
+  background-color: rgb(176,72,79);
+  padding: 1.25rem;
+  margin: 0rem 1rem 2rem 1rem;
+  border: solid;
+  border-radius: 0.3rem;
+  border-color: rgb(0, 0, 0);
+  border-width: 0.085rem;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.342);
+}
+
+body, .jumbotron {
   background-color: rgb(242,230,188);
+}
+
+.jumbotron {
+  border: none;
 }

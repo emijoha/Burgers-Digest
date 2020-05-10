@@ -26,7 +26,9 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-sm chalkboard">
+
+    <div class="col-lg chalk-border">
+      <div class="chalkboard">
 
       <h2 class="text-center">Burgers Served</h2>
 
@@ -38,20 +40,23 @@
         {{/each}}
       </ul>
 
+      </div>
     </div>
 
-    <div class="col-sm chalkboard">
+    <div class="col-lg chalk-border">
+      <div class=" chalkboard">
 
-      <h2 class="text-center">Burgers Digested</h2>
+        <h2 class="text-center">Burgers Digested</h2>
 
-      <ul>
-        {{#each burgers}}
-        {{#if digested}}
-        {{> burgers/burger-block digest=false}}
-        {{/if}}
-        {{/each}}
-      </ul>
+        <ul>
+          {{#each burgers}}
+          {{#if digested}}
+          {{> burgers/burger-block digest=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
 
+      </div>
     </div>
   </div>
 </div>
