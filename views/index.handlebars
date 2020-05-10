@@ -1,39 +1,53 @@
 <h3>Bob Flether's</h3>
 <h1>BURGER'S DIGEST</h1>
 
-<h4>Get a burger from Bob...</h4>
-<form class="random-form">
-  <button id="random-submit" type="submit">Random Bob's Burger</button>
-</form>
+<div class="container">
+  <div class="row">
 
-<h4>... or come up with your own yummy punny burger!</h4>
-<form class="create-form">
+    <h4>Get a burger from Bob...</h4>
 
-  <div class="form-group">
-    <label for="burg">Burger name:</label>
-    <input type="text" id="burg" name="name">
+    <form class="random-form">
+      <button id="random-submit" type="submit">Random Bob's Burger</button>
+    </form>
+
+    <h4>... or come up with your own yummy punny burger!</h4>
+
+    <form class="create-form">
+      <div class="form-group">
+        <input type="text" id="burg" name="name" placeholder="Add your own burger...">
+      </div>
+      <button id="create-submit" type="submit">Add My Burger</button>
+    </form>
+
   </div>
 
-  <button id="create-submit" type="submit">Add My Burger</button>
-</form>
+  <div class="row">
+    <div class="col-sm">
 
-<h2>Burgers Served</h2>
+      <h2>Burgers Served</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless digested}}
-      {{> burgers/burger-block digest=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+      <ul>
+        {{#each burgers}}
+        {{#unless digested}}
+        {{> burgers/burger-block digest=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
 
-<h2>Burgers Digested</h2>
+    </div>
 
-<ul>
-  {{#each burgers}}
-    {{#if digested}}
-      {{> burgers/burger-block digest=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+    <div class="col-sm">
 
+      <h2>Burgers Digested</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if digested}}
+        {{> burgers/burger-block digest=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+  </div>
+</div>
