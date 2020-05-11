@@ -1,44 +1,49 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container text-center">
 
-    <h3>Bob Flether's</h3>
-    <h1 class="display-4">BURGER'S DIGEST</h1>
-    <h4>Serve up one of Bob's burgers, or create a yummy punny burger of your own!</h4>
+    <div class="bob-border">
+      <h3 class="bob-name">BOB BELCHER'S</h3>
+    </div>
 
-    <div class="row">
-
-      <div class="col-sm">
-
-        <form class="create-form">
-          <div class="form-group">
-            <input type="text" id="burg" name="name" placeholder="Create a burger...">
-            <button id="create-submit" type="submit">Add My Burger</button> or 
-            <button id="random-submit" type="button">Random Bob's Burger</button>
-          </div>
-        </form>
-
-      </div>
-
+    <div class="app-wrap">
+      <h1 class="app-name app-name-one">Burger's</h1>
+      <h1 class="app-name app-name-two">digest</h1>
     </div>
 
   </div>
 </div>
 
 <div class="container">
+
+  <div class="row user-input text-center">
+
+    <div class="col-sm">
+      <h4 class="app-sub">Serve up one of Bob's burgers, or create a yummy punny burger of your own!</h4>
+      <form class="create-form">
+        <div class="form-group">
+          <input type="text" id="burg" name="name" placeholder="Create a burger...">
+          <button id="create-submit" type="submit">Add My Burger</button> or
+          <button id="random-submit" type="button">Random Bob's Burger</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
   <div class="row">
 
     <div class="col-lg chalk-border">
       <div class="chalkboard">
 
-      <h2 class="text-center">Burgers Served</h2>
+        <h2 class="text-center">Burgers Served</h2>
 
-      <ul>
-        {{#each burgers}}
-        {{#unless digested}}
-        {{> burgers/burger-block digest=true}}
-        {{/unless}}
-        {{/each}}
-      </ul>
+        <ul>
+          {{#each burgers}}
+          {{#unless digested}}
+          {{> burgers/burger-block digest=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
 
       </div>
     </div>

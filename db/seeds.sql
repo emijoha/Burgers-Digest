@@ -177,7 +177,7 @@ VALUES
     ("The Say Cheese Burger"),
     ("It Takes Bun to Know Bun Burger - Comes on a fancy bun"),
     ("Heads Shoulders Knees and Tomatoes Burger"),
-    ("'m Picklish Burger - Comes with pickles"),
+    ("I'm Picklish Burger - Comes with pickles"),
     ("Runny Out of Thyme Burger - Comes with a runny fried egg"),
     ("Total Eclipse of the Havarti Burger"),
     ("Ring Around the Collard Burger"),
@@ -337,7 +337,7 @@ VALUES
     ("The Deep Blue Brie Burger - Comes with blue cheese and brie"),
     ("The Stayin' A-chive Burger"),
     ("The Almond Butters Band Burger - Comes with toasted almond butter"),
-    ("Avoca-don't You Wante Me Baby? Burger"),
+    ("Avoca-don't You Want Me Baby? Burger"),
     ("Take A Picture Fig'll Last Longer Burger"),
     ("Bet It All on Black Garlic Burger");
 
