@@ -18,14 +18,27 @@
   <div class="row user-input text-center">
 
     <div class="col-sm">
+
       <h4 class="app-sub">Serve up one of Bob's burgers, or create a yummy punny burger of your own!</h4>
+      <hr>
       <form class="create-form">
         <div class="form-group">
-          <input type="text" id="burg" name="name" placeholder="Create a burger...">
-          <button id="create-submit" type="submit">Add My Burger</button> or
-          <button id="random-submit" type="button">Random Bob's Burger</button>
+
+          <div id="el-wrap">
+            <input type="text" id="burg" name="name" placeholder="Create a burger...">
+          </div>
+
+          <div id="el-wrap">
+            <button id="create-submit" type="submit">ADD BURGER</button>
+          </div>
+
+          <div id="el-wrap">
+            <button id="random-submit" type="button">RANDOM BOB'S BURGER</button>
+          </div>
+
         </div>
       </form>
+      <hr>
     </div>
 
   </div>
@@ -34,10 +47,9 @@
 
     <div class="col-lg chalk-border">
       <div class="chalkboard">
+        <h2 class="text-center" id="chalk-title">Burgers Served</h2>
 
-        <h2 class="text-center">Burgers Served</h2>
-
-        <ul>
+        <ul class="text-center">
           {{#each burgers}}
           {{#unless digested}}
           {{> burgers/burger-block digest=true}}
@@ -51,9 +63,9 @@
     <div class="col-lg chalk-border">
       <div class=" chalkboard">
 
-        <h2 class="text-center">Burgers Digested</h2>
+        <h2 class="text-center" id="chalk-title">Burgers Digested</h2>
 
-        <ul>
+        <ul class="text-center">
           {{#each burgers}}
           {{#if digested}}
           {{> burgers/burger-block digest=false}}
@@ -64,4 +76,16 @@
       </div>
     </div>
   </div>
+
+  <br>
+  <br>
+  <h3 class="credit-line text-center">A Full Stack Application By
+    <div id="github-border">
+      <a id="git-link" href="https://github.com/emijoha">
+        <h3 id="github-link">E.J. HARTLINE</h3>
+      </a>
+    </div>
+  </h3>
+  <br>
+  <br>
 </div>

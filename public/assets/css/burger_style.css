@@ -1,7 +1,8 @@
 .chalkboard {
   background-color: rgb(119,122,131);
   color: white;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin: 0;
   border: solid;
   border-radius: 0.3rem;
   border-color: rgb(0, 0, 0);
@@ -28,10 +29,10 @@ body {
   border: none;
 }
 
-.bob-name {
+.bob-name, #github-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  font-size: 2.75rem;
+  font-size: 2.25rem;
   font-weight: bold;
   background-color: rgb(246,225,37);
   color:rgb(239,33,49);
@@ -45,9 +46,9 @@ body {
   border-width: 0.075rem;
 }
 
-.bob-border {
+.bob-border, #github-border {
   background-color: rgb(239,33,49);
-  padding: 0.25rem;
+  padding: 0.2rem;
   width: fit-content;
   margin: 0 auto;
   border: solid;
@@ -67,37 +68,127 @@ body {
 }
 
 .app-name-one {
-  font-size: 11.25rem;
+  font-size: 9rem;
   position: relative;
-  top: -3.25rem;
+  top: -3rem;
 }
 
 .app-name-two {
-  font-size: 7rem;
+  font-size: 5.5rem;
   position: absolute;
-  top: 6.75rem;
-  left: 22rem;
-  z-index: 1;
+  top: 5rem;
+  left: 24.5rem;
 }
 
 .app-sub {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 2rem;
-  z-index: 1;
+  font-size: 1.5rem;
 }
 
-/* #trapezoid {
-  border-bottom: 9.75rem solid rgb(242,230,188);
-  border-left: 40rem solid transparent;
-  border-right: 40rem solid transparent;
-  height: 0;
-  width: 100%;
-  position: relative;
-  top: -11.75rem;
-} */
-
-.user-input {
-
+#create-submit, #random-submit {
+  color:rgb(239,33,49);
+  text-shadow: -1.4px 1.4px black, -0.65px 0 black, 0 0.65px black, 0.65px 0 black, 0 -0.65px black;
+  background-color: rgb(246,225,37);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border: solid;
+  border-color: black;
+  border-width: 0.05rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
 }
 
+#el-wrap {
+  display: inline-block;
+  padding: 0.2rem;
+  background-color: rgb(239,33,49);
+  height: fit-content;
+  width: fit-content;
+  border: solid;
+  border-color: black;
+  border-width: 0.05rem;
+  border-radius: 0.25rem;
+  margin: 0.125rem;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.342);
+}
+
+#burg {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border: solid;
+  border-color: black;
+  border-width: 0.05rem;
+  border-radius: 0.25rem;
+  padding: 0.05rem 0.5rem 0.05rem 0.5rem;
+  width: 35rem;
+}
+
+hr {
+  border-color: black;
+}
+
+#chalk-title {
+  font-family: 'Londrina Shadow', cursive;
+  font-size: 3.5rem;
+}
+
+#burger-name {
+  font-family: 'Schoolbell', cursive;
+  font-size: 1.55rem;
+  margin:0;
+  padding: 0;
+}
+
+#burger-name:hover {
+  text-shadow: -1.5px 1.5px black, -0.75px 0 black, 0 0.75px black, 0.75px 0 black, 0 -0.75px black;
+}
+
+li {
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.change-digest, .delete-burger {
+  font-family: 'Schoolbell', cursive;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 1.35rem;
+  padding: 0.1rem 0.75rem 0.1rem 0.75rem;
+  border: none;
+}
+
+
+.change-digest:hover {
+  color: rgb(246,225,37);
+  cursor: pointer;
+  text-shadow: -1.5px 1.5px black, -0.75px 0 black, 0 0.75px black, 0.75px 0 black, 0 -0.75px black;
+}
+
+.delete-burger:hover {
+  color: rgb(239,33,49);
+  cursor: pointer;
+  text-shadow: -1.5px 1.5px black, -0.75px 0 black, 0 0.75px black, 0.75px 0 black, 0 -0.75px black;
+}
+
+.credit-line {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+#github-link {
+  color: rgb(239,33,49);
+}
+
+#git-link:hover {
+  text-decoration: none;
+}
